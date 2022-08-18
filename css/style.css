@@ -1,0 +1,271 @@
+*{
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.9rem;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F9FA;
+    width: 100%;
+    padding: 0 11%;
+    height: 8.5vh;
+
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav div .brand {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-right: 2rem;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style:none;
+    padding: 0 0.5rem;
+}
+nav ul li a{
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+nav ul li a:hover{
+
+    color: rgba(0, 0, 0,1);
+}
+.active {
+    color: #000;
+}
+
+header{
+    margin-top: 4vh;
+    width: 100%;
+    height: 35vh;
+    margin-bottom: 10vh;
+    padding: 0 11%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header .header-texts{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+
+.logo{
+    width:20%;
+    height: auto;
+    mix-blend-mode:multiply ;
+}
+header h1{
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+header p{
+    font-size: 1.2rem;
+    color: #18191a;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    height: auto;
+    margin-bottom: 20vh;
+    
+
+
+}
+.card{
+    border:1px solid #d3d8da ;
+    width: 21% ;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin: 2%;
+    height: auto;
+}
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.card a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color:#212529;
+    font-weight: 700;
+    
+}
+
+.card a:hover{
+    color:#697f94;
+}
+
+.rating i.fas {
+    color: #FFD700;
+}
+.rating i.far{
+    color:#212529;
+}
+.card a.active {
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+.card a.active:hover {
+    color: rgb(50, 110, 223);
+}
+
+.card p{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+
+}
+.card button{
+    text-decoration: none;
+    border: 1px solid #212529;
+    cursor: pointer;
+    width: 70%;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 1rem;
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+.card button:hover{
+    border: 1px solid transparent;
+    background-color: #212529;
+    color: #fff;
+    
+}
+
+.card span{
+    color:#212529;
+    text-decoration: line-through;
+}
+
+
+footer{
+    width: 100%;
+    height: 19vh;
+    background-color: #212529;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 11%;
+    font-size: 1.1rem;
+    font-weight: 300;
+
+}
+
+
+
+
+
+
+@media (max-width:480px){
+    
+    header{
+        height: 20vh;
+    }
+    .logo{
+        width: 40%;
+    }
+    .card a{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width:767px){
+
+    nav{
+        height:50vh ;
+        
+    }
+    nav,
+    nav ul li,
+    nav div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav div .brand
+    {
+        margin: 0;
+    }
+
+    nav ul li,
+    nav div{
+        margin-top: 1rem;
+    }
+
+
+    header{
+        flex-direction: column;
+        height: 50vh;
+    }
+    header .logo{
+        width: 35%;
+    }
+
+    .cards{
+        height: auto;
+    }
+
+    .card{
+        width: 46%;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:992px){
+
+.cards{
+        height: auto;
+    }
+
+    .card{
+        width: 27%;
+    }
+}
